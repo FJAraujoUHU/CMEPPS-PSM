@@ -36,7 +36,7 @@ public class PanelAhorcado extends JPanel {
         BufferedImage bufImg;
         Image img;
         try {
-            bufImg = ImageIO.read(this.getClass().getResourceAsStream("../recursos/ahorcado" + fallos + ".png"));
+            bufImg = ImageIO.read(this.getClass().getResourceAsStream("/recursos/ahorcado" + fallos + ".png"));
             img = bufImg.getScaledInstance(tam, tam, Image.SCALE_REPLICATE);
             g.drawImage(img, 0, 0, null);
         } catch (IOException ex) {
